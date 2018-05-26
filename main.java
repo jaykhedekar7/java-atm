@@ -37,7 +37,8 @@ public class main {
                 transaction = scan.nextInt();
                 if (transaction > bankBalance) {
                     System.out.println("\nSorry you don't have enough cash!");
-                } else {
+                } 
+                else {
                     bankBalance = bankBalance - transaction;
                     System.out.println("\nTransaction Successful. You remaining balance is: " + bankBalance);
 
