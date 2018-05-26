@@ -4,7 +4,7 @@ public class main {
 
     public static void main(String args[]){
 
-        int choice;
+        int choice = 0;
 //        Initial amount in the account is 10000
         double bankBalance = 10000;
 //        Interest rate is assumed to be 7%
@@ -20,17 +20,9 @@ public class main {
 
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("Select your option:\n");
-        System.out.println("1. Withdraw\n");
-        System.out.println("2. Check Balance\n");
-        System.out.println("3. Deposit\n");
-        System.out.println("4. Make a Fixed Deposit\n");
-        System.out.println("5. Exit\n");
-
-        choice = scan.nextInt();
 
         while(choice != 5){
-
+            System.out.println("__________________________________________\n");
             System.out.println("Select your option:\n");
             System.out.println("1. Withdraw\n");
             System.out.println("2. Check Balance\n");
@@ -82,7 +74,7 @@ public class main {
                 break;
 
             case 5:
-                System.out.println("\nExited);
+                System.out.println("\nExited");
                 break;
 
             default:
