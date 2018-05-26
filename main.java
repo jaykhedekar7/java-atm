@@ -30,60 +30,60 @@ public class main {
             System.out.println("4. Make a Fixed Deposit\n");
             System.out.println("5. Exit\n");
 
-        choice = scan.nextInt();
-        switch (choice) {
-            case 1:
-                System.out.println("Enter the amount you want to withdraw:\n");
-                transaction = scan.nextInt();
-                if (transaction > bankBalance) {
-                    System.out.println("\nSorry you don't have enough cash!");
-                } 
-                else {
-                    bankBalance = bankBalance - transaction;
-                    System.out.println("\nTransaction Successful. You remaining balance is: " + bankBalance);
+            choice = scan.nextInt();
+            switch (choice) {
+                case 1:
+                    System.out.println("Enter the amount you want to withdraw:\n");
+                    transaction = scan.nextInt();
+                    if (transaction > bankBalance) {
+                        System.out.println("\nSorry you don't have enough cash!");
+                    }
+                    else {
+                        bankBalance = bankBalance - transaction;
+                        System.out.println("\nTransaction Successful. You remaining balance is: " + bankBalance);
 
-                }
-                break;
+                    }
+                    break;
 
-            case 2:
-                System.out.println("\nYour balance is: " + bankBalance);
-                break;
+                case 2:
+                    System.out.println("\nYour balance is: " + bankBalance);
+                    break;
 
-            case 3:
-                System.out.println("\nEnter amount you want to deposit: ");
-                deposit = scan.nextInt();
+                case 3:
+                    System.out.println("\nEnter amount you want to deposit: ");
+                    deposit = scan.nextInt();
 
-                if (deposit > 0) {
-                    System.out.println("Deposited!\n");
-                    bankBalance = bankBalance + deposit;
-                    System.out.println("You bank balance is: " + bankBalance);
-                } 
-                else {
-                    System.out.println("Enter valid amount\n");
-                }
+                    if (deposit > 0) {
+                        System.out.println("Deposited!\n");
+                        bankBalance = bankBalance + deposit;
+                        System.out.println("You bank balance is: " + bankBalance);
+                    }
+                    else {
+                        System.out.println("Enter valid amount\n");
+                    }
 
-                break;
+                    break;
 
-            case 4:
-                System.out.println("\nEnter the amount for fixed deposit: ");
-                amount = scan.nextInt();
-                System.out.println("Enter number for years for fixed deposit: ");
-                years = scan.nextInt();
-                interest = amount * years * 0.07;
-                bankBalance = bankBalance + interest;
-                System.out.println("\nYour bank balance after fixed deposit would be: " + bankBalance);
-                break;
+                case 4:
+                    System.out.println("\nEnter the amount for fixed deposit: ");
+                    amount = scan.nextInt();
+                    System.out.println("Enter number for years for fixed deposit: ");
+                    years = scan.nextInt();
+                    interest = amount * years * 0.07;
+                    bankBalance = bankBalance + interest;
+                    System.out.println("\nYour bank balance after fixed deposit would be: " + bankBalance);
+                    break;
 
-            case 5:
-                System.out.println("\nExited");
-                break;
+                case 5:
+                    System.out.println("\nExited");
+                    break;
 
-            default:
-                System.out.println("\nEnter valid input.");
-                break;
+                default:
+                    System.out.println("\nEnter valid input.");
+                    break;
 
 
-        }
+            }
         }
     }
 }
