@@ -64,7 +64,8 @@ public class main {
                     System.out.println("Deposited!\n");
                     bankBalance = bankBalance + deposit;
                     System.out.println("You bank balance is: " + bankBalance);
-                } else {
+                } 
+                else {
                     System.out.println("Enter valid amount\n");
                 }
 
